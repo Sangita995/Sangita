@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compact UI Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1d1e2c;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .card h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .card p {
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    .card a {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 12px;
+      color: #ff4081;
+      text-decoration: none;
+    }
+
+    .card1 {
+      grid-row: span 2;
+      background: linear-gradient(to right, #a8ff78, #78ffd6);
+    }
+
+    .card2 {
+      /* grid-row: ; */
+      background: linear-gradient(to right, #c471f5, #fa71cd);
+    }
+
+    .card3 {
+      background: linear-gradient(to right, #36d1dc, #5b86e5);
+    }
+
+    .card4 {
+      background: linear-gradient(to right, #f7971e, #ffd200);
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="card card1">
+      <div>
+        <h1>33</h1>
+        <h2>WEB & APP TEMPLATES</h2>
+        <p>Dashboard, Photography, E-Commerce, Landing, Blog…</p>
+      </div>
+      <a href="#">EXPLORE DEMO</a>
+    </div>
+
+    <div class="card card2">
+      <h1>228</h1>
+      <h2>UI BLOCKS</h2>
+      <p>Creative / Business / E-Commerce / Dashboard</p>
+      <a href="#">VIEW ALL</a>
+    </div>
+
+    <div class="card card3">
+      <h1>105</h1>
+      <h2>INNER PAGES</h2>
+      <p>Blog, Shop, Portfolio Pages</p>
+    </div>
+
+    <div class="card card4">
+      <h1>1K+</h1>
+      <h2>UI ELEMENTS</h2>
+      <p>Components: buttons, alerts & more</p>
+    </div>
+  </div>
+</body>
+</html>
